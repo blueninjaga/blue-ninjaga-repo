@@ -16,7 +16,7 @@ t.goto(-300, 50)
 t.down()
 t.color('gold')
 t.begin_fill()
-t.circle(250)
+t.circle(260)
 t.end_fill()
 # Mercury
 t.up()
