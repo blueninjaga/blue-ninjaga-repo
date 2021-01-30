@@ -1,4 +1,13 @@
 import turtle
+
+
+def draw_orbit(orbit):
+    t.goto(0, orbit * (-1))
+    t.down()
+    t.circle(orbit)
+    t.up()
+
+
 Sun =30
 Mercury =4.87
 Venus =12.10
@@ -30,40 +39,15 @@ uran_orb=600
 neptune_orb=750
 
 t = turtle.Pen()
+t.pencolor('yellow')
+turtle.Screen().bgcolor("black")
+draw_orbit(sun_orb)
+draw_orbit(mercury_orb)
+draw_orbit(venus_orb)
+draw_orbit(earth_orb)
+draw_orbit(mars_orb)
+draw_orbit(Jupiter_orb)
+draw_orbit(saturn_orb)
+draw_orbit(uran_orb)
+draw_orbit(neptune_orb)
 
-turtle.pencolor('yellow')
-turtle.circle(0,Sun_color*(-1))
-turtle.down()
-turtle.circle(sun_orb)
-turtle.up()
-turtle.goto(0,mercury_orb*(-1))
-turtle.down()
-turtle.circle(mercury_orb)
-turtle.up()
-turtle.goto(0,venus_orb*(-1))
-turtle.down()
-turtle.circle(venus_orb)
-turtle.up()
-turtle.goto(0,earth_orb*(-1))
-turtle.down()
-turtle.circle(earth_orb)
-turtle.up()
-turtle.goto(0,mars_orb*(-1))
-turtle.down()
-turtle.circle(mars_orb)
-turtle.up()
-turtle.goto(0,Jupiter_orb*(-1))
-turtle.down()
-turtle.circle(Jupiter_orb)
-turtle.up()
-turtle.goto(0,saturn_orb*(-1))
-turtle.down()
-turtle.circle(saturn_orb)
-turtle.up()
-turtle.goto(0,uran_orb*(-1))
-turtle.down()
-turtle.circle(uran_orb*(-1))
-turtle.up()
-turtle.circle(neptune_orb*(-1))
-turtle.down()
-turtle.circle(neptune_orb*(-1))
