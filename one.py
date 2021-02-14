@@ -21,8 +21,8 @@
 #         if elem1 == elem2:
 #             c.append(elem1)
 # print(c)
-d = {"меркурий": 1, "земля": 3, "марс": 4, "венера": 2, "солнце": 0}
-
-
-result = sorted(d, key=d.get, reverse=False)
-print(result)
+#d = {"меркурий": 1, "земля": 3, "марс": 4, "венера": 2, "солнце": 0}
+#result = sorted(d, key=d.get, reverse=False)
+#print(result)
+#print(my_dict.keys()
+list.sort()
