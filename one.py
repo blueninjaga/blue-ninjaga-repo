@@ -25,4 +25,3 @@
 #result = sorted(d, key=d.get, reverse=False)
 #print(result)
 #print(my_dict.keys()
-list.sort()

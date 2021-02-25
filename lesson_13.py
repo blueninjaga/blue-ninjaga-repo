@@ -21,10 +21,17 @@
 # mylist.pop(0)
 #del mylist[0]
 #print (mylist)
-
-my_dict = {'a':500, 'b':5874, 'c':560, 'd':400, 'e':5874, 'f': 20}
-list = list(my_dict.values())
-list.sort()
-for x in list:
-       print(x)
-
+# my_dict = ["one","two","three"]
+# list = list(my_dict)
+# print()
+# mylist = ("apple", "banana", "cherry", "apple", "banana", "cherry")
+# print(mylist)
+# print(len(mylist))
+# print(type(mylist)
+# mylist = ("apple", "banana", "cherry")
+# (green,yellow,red) = mylist
+# print(green)
+# print(yellow)
+# print(red)
+this_set= {"apple", "banana", "cherry", "banana"}
+print(this_set)
