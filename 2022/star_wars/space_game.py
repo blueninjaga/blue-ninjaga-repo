@@ -1,6 +1,6 @@
-import pygame
-import sys
+import pygame, controus
 from gun import Gun
+
 
 def run():
 
@@ -11,12 +11,11 @@ def run():
     gun = Gun(screen)
 
     while True:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                sys.exit()
-
+        controus.events(gun)
+        gun.update_gun()
         screen.fill(bg_color)
         gun.output()
         pygame.display.flip()
+
 
 run()
