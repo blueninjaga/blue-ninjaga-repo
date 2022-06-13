@@ -1,7 +1,7 @@
-import pygame, controus
+import pygame, controls
 from gun import Gun
 from  pygame.sprite import Group
-from im import  Im
+
 
 def run():
     pygame.init()
@@ -10,13 +10,14 @@ def run():
     bg_color = (0, 0, 0)
     gun = Gun(screen)
     bullets = Group()
-    im = Im(screen)
+    inos = Group()
+    controls.create_army(screen, inos)
 
     while True:
-        controus.events(screen, gun, bullets)
+        controls.events(screen, gun, bullets)
         gun.update_gun()
-        bullets.update()
-        controus.update(bg_color, screen, gun, im, bullets)
-        controus.update_bullets(bullets)
+        controls.update(bg_color, screen, gun, inos, bullets)
+        controls.update_bullets(bullets)
+        controls.update_inos(inos)
 
 run()

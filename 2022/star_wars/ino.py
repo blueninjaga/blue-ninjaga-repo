@@ -1,13 +1,13 @@
-import  pygame
+import pygame
 
-class Im(pygame.sprite.Sprite):
+class Ino(pygame.sprite.Sprite):
     ''''''
 
     def __init__(self, screen):
         ''''''
-        super(Im, self).__init__()
+        super(Ino, self).__init__()
         self.screen = screen
-        self.image = pygame.image.load('images/im.png')
+        self.image = pygame.image.load('images/ino.png')
         self.rect = self.image.get_rect()
         self.rect.x = self.rect.width
         self.rect.y = self.rect.height
@@ -17,3 +17,8 @@ class Im(pygame.sprite.Sprite):
     def draw(self):
         ''''''
         self.screen.blit(self.image, self.rect)
+
+    def update(self):
+        ''''''
+        self.y += 0.1
+        self.rect.y = self.y
